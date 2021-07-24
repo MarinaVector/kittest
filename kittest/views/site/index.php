@@ -50,9 +50,9 @@ $this->registerMetaTag([
                 <div id="chart">
                 </div>
                 <h3 class="orders-view__title pl-3 pb-1">Всего поручено принять стоимость за товары</h3>
-                <p class="orders-view__subtitle pl-3 mb-5">156.000 p.</p>
+                <p class="orders-view__subtitle pl-3 mb-5">150.056 p.</p>
 
-                <div class="row">
+                <div class="row align-items-center pb-5">
                     <div class="col-xl-3 col-lg-4 col-12 col-md-7">
                         <div class="campaign-chart" id="campaignChart"></div>
                     </div>
@@ -63,7 +63,7 @@ $this->registerMetaTag([
                                                                                    alt="принят" src="images/cart.png"></div>
                             </div>
                             <div class="col-8 px-0">
-                                <h6 class="orders-view__summ">75000 P</h6>
+                                <h6 class="orders-view__summ">75 056 P</h6>
                                 <p class="orders-view__subtitle">Принято</p>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ $this->registerMetaTag([
                                                                                 alt="ждет оплаты" src="images/wait.png"></div>
                             </div>
                             <div class="col-8 px-0">
-                                <h6 class="orders-view__summ">75500 P</h6>
+                                <h6 class="orders-view__summ">75 000 P</h6>
                                 <p class="orders-view__subtitle">Ожидают оплаты</p>
                             </div>
                         </div>
