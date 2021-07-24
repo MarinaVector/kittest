@@ -1,0 +1,40 @@
+.apexcharts-legend .apexcharts-legend-series .apexcharts-legend-marker {
+    height: 28px !important;
+    width: 28px !important;
+    border-radius: 6px !important;
+}
+
+.apexcharts-canvas {
+
+    font-weight: 600 !important;
+    font-size: 17px !important;
+    line-height: 25px !important;
+    color: $info !important;
+}
+
+.apexcharts-legend .apexcharts-legend-series .apexcharts-legend-text {
+
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 14px !important;
+    line-height: 21px !important;
+    letter-spacing: -0.015em !important;
+    color: $title !important;
+    top: -10px;
+}
+
+
+.apexcharts-xaxis-title {
+    @extend %chart-font;
+    font-weight: 600 !important;
+    font-size: 17px !important;
+    line-height: 25px !important;
+    color: #464E5F !important;
+    font-style: normal;
+}
+
+
+
+
+

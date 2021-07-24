@@ -1,0 +1,53 @@
+html,
+body {
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 27px;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.container-project {
+	max-width: 1440px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+  }
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+	
+	button {
+		background-color: $danger;
+		cursor: pointer;
+		border: none;
+		width: 8px;
+		height: 8px;
+		border-radius: 6px;
+        padding: 0;
+        font-size: 0;
+	}
+
+
+	//sass web/css/scss/style.scss web/css/style.min.css
+	
+ //https://www.figma.com/file/6TPBBCoNntrAHk6CZ5B3ja/Untitled?node-id=1%3A56
+
+
+
+
+

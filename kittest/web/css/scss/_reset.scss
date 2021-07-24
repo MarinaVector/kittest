@@ -1,0 +1,78 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-size: inherit;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  //max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  cursor: pointer;
+}
+
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-light .navbar-toggler {
+  color: transparent !important;
+  border-color: transparent !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $title !important;
+  ;
+}
+
+.form-control {
+  border:none !important;
+  background-color: transparent;
+}

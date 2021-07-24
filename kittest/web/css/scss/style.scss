@@ -1,0 +1,344 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'media';
+@import 'global';
+@import 'apexch';
+
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-page {
+  background: $default-bg;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.active-marker {
+  transition: transform 0.4s;
+  width: 2px;
+  background-image: linear-gradient(90deg, #ff5e5e, $danger);
+  background-size: 100%;
+  height: 36px;
+  margin-left: -15px;
+  transform: translateY(42px);
+  position: absolute;
+  top: 15px;
+}
+
+.menu-toggle {
+  background: $danger;
+  border-radius: 3px;
+  opacity: 0.8;
+  width: 40px;
+ }
+
+
+.side-menu {
+  @extend %default-font;
+  background: $default;
+  min-height: auto;
+
+
+  &__title {
+    font-size: 14px;
+    color: $style;
+    line-height: 21px;
+
+    &-item {
+      transition: all 0.4s;
+      color: $style;
+      height: $menu-item-height;
+    }
+
+    &:visited {
+      color: $style;
+    }
+
+    &:hover,
+    &:active {
+      color: $danger;
+    }
+  }
+
+}
+
+
+.order-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  padding: 9px;
+
+  &-recive {
+    background: $cart_icon;
+  }
+
+  &-wait {
+    background: $search_icon;
+  }
+}
+
+
+.menu {
+  @extend %default-font;
+  font-size: 16px;
+
+  &__item {
+
+    &-tel {
+      max-width: 168px;
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &-link {
+      color: $title;
+      font-style: normal;
+      font-weight: normal;
+
+      &:hover {
+        color: $style !important;
+      }
+
+      &:focus,
+      &:active {
+        color: $danger !important;
+      }
+    }
+
+
+    &-btn {
+      background: $danger;
+      border-radius: 6px;
+      line-height: 15px;
+      text-align: center;
+      color: $default;
+      height: 55px;
+      width: 212px;
+
+      &:hover {
+        color: $default;
+        font-weight: 600;
+      }
+    }
+  }
+
+}
+
+
+.orders {
+  background: $default-bg;
+}
+
+
+.order-summary {
+  @extend %default-font;
+
+  &__title {
+
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 31px;
+    color: $title;
+
+  }
+
+  &__option {
+    color: $notes;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__interval {
+    padding: 6px;
+    background: $default-bg;
+    border-radius: 5px;
+  }
+
+}
+
+
+.orders-view {
+  @extend %chart-font;
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    color: $info;
+  }
+
+  &__summ {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: $info;
+
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 23px;
+    color: $subtitle;
+
+  }
+}
+
+
+.footer-project {
+  background: $style;
+  color: $default;
+}
+
+
+.search-container {
+  display: block;
+  margin: 0 auto;
+
+
+  &-searching {
+    width: 305px;
+  }
+
+  &-tracking {
+    width: 205px;
+  }
+
+  &__bar {
+    margin: 0 auto;
+    max-width: 305px;
+    height: 55px;
+    padding: 0 20px;
+    font-size: inherit;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: 1px 4px 40px rgba(229, 229, 229, 0.6);
+    cursor: pointer;
+
+    &:focus {
+      border: 1px solid #d61d4b;
+      transition: 0.35s ease;
+      color: #dd1a38;
+
+    }
+
+    &:hover {
+      top: -1px;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__bot {
+    border: none;
+    border-bottom: 1px solid $default;
+    background-color: transparent;
+    color: $default;
+    width: inherit;
+    line-height: 31px !important;
+  }
+
+  &-icon {
+    position: relative;
+    float: right;
+    width: 33px;
+    height: 33px;
+    top: 8px;
+    right: 45px;
+  }
+
+  &-track {
+    position: relative;
+    float: right;
+    width: 19px;
+    height: 19px;
+    top: -27px;
+    right: 15px;
+  }
+
+}
+
+
+.footer-project {
+  @extend %default-font;
+  color: $default;
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: -0.015em;
+
+  }
+
+  &__info {
+    @extend %info-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $default-bg;
+
+  }
+
+  &__rights {
+    @extend %info-font;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    color: $default-bg;
+
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 15px;
+
+  }
+
+  &__contacts {
+    @extend %info-font;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &__name {
+    @extend %info-font;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+
+  }
+
+  &__phone {}
+
+  &__email {}
+
+}
+
+.social-block {
+  width: 98px;
+  height: 90px;
+
+  &__icon {
+    width: 44px;
+    height: 40px;
+    background: $social-bg;
+
+  }
+}
+
