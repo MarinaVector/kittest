@@ -4,6 +4,7 @@
 /* @var $content string */
 
 $this->title = 'Kit order panel';
+
 use app\assets\AppAsset;
 
 AppAsset::register($this);
@@ -45,7 +46,6 @@ AppAsset::register($this);
     <link href="css/style.min.css" rel="stylesheet">
 
 
-
 </head>
 
 <body>
@@ -63,7 +63,6 @@ AppAsset::register($this);
 
 
             <img class="logo d-inline pr-2 pb-4 pb-lg-0" src="images/Logo.png" alt="Logo" width="168" height="73">
-
 
 
             <div class="collapse navbar-collapse d-lg-flex justify-content-lg-between" id="navbarSupportedContent">
@@ -89,7 +88,8 @@ AppAsset::register($this);
 
 
                 <div class="input-group search-container__bar pr-xl-4 mx-0 mr-xl-15 mr-lg-31 pt-2 pt-lg-1">
-                    <input type="text" class="search-container-info form-control d-inline-block text-truncate px-0 pb-2 pb-lg-0"
+                    <input type="text"
+                           class="search-container-info form-control d-inline-block text-truncate px-0 pb-2 pb-lg-0"
                            placeholder="Отследить/Оплатить заказ">
                     <div class="input-group-append">
                         <button class="btn btn-white" type="button">
@@ -106,7 +106,6 @@ AppAsset::register($this);
     </div>
 
 
-
     <div class="container-project">
         <div class="row">
             <nav id="sidebarMenu" class="side-menu col-12 col-md-3 col-xl-2 d-block collapse pb-5">
@@ -114,7 +113,8 @@ AppAsset::register($this);
 
 
           <span class="collapsed"><img class="change-my-color d-inline ml-md-0 ml-3 pr-1" data-toggle="collapse"
-                                       data-target="#collapse" aria-expanded="true" aria-controls="collapse" width="29" height="15"
+                                       data-target="#collapse" aria-expanded="true" aria-controls="collapse" width="29"
+                                       height="15"
                                        src="images/burger.png" alt="Открыть сайдбар"></span>
 
 
@@ -200,10 +200,10 @@ AppAsset::register($this);
     <footer class="footer-project py-5">
         <div class="container-project py-md-5">
             <ul class="footer-project__items row pt-lg-5 pb-lg-2 py-lg-4">
-                <li
-                        class="footer-project__item py-0 offset-xl-1 pl-lg-5 col-lg-3 col-md-6 offset-md-1 offset-lg-0 pl-xl-5 pr-xl-0 mr-xl-3 col-12">
+                <li class="footer-project__item py-0 offset-xl-1 pl-lg-5 col-lg-3 col-md-6 offset-md-1 offset-lg-0 pl-xl-5 pr-xl-0 mr-xl-3 col-12 pb-5 pb-lg-0">
                     <h2 class="footer-project__title h4 pb-xl-3">«Е-КИТ»</h2>
-                    <p class="text-break footer-project__info pb-5">Современная служба доставки, которая осуществляет полный
+                    <p class="text-break footer-project__info pb-5">Современная служба доставки, которая осуществляет
+                        полный
                         комплекс услуг, связанных с
                         транспортировкой и
                         доставкой товаров как для юридических, так и для физических лиц. </p>
@@ -211,24 +211,25 @@ AppAsset::register($this);
 
                 </li>
 
-                <li class="footer-project__item nav-item col-lg-3 col-md-5 pl-lg-5 py-md-0 pr-md-0 col-12">
+                <li class="footer-project__item nav-item col-lg-3 col-md-5 pl-lg-5 py-md-0 pr-md-0 col-12 pb-5 pb-lg-0">
                     <h4 class="footer-project__subtitle pb-4">Отследить <br>
                         отправление</h4>
 
 
                     <form class="search-container search-container-tracking pb-3 m-0">
-                        <input type="text" class="search-container__bot footer-project__contacts" value="Укажите трек номер">
+                        <input type="text" class="search-container__bot footer-project__contacts"
+                               value="Укажите трек номер">
                         <a href="#"><img class="search-container-track" src="images/track_icon.png" alt="Поиск"></a>
                     </form>
-                    <p class="footer-project__subtitle pr-md-0 pb-lg-2 pr-md-0">Смотреть документы</p>
+                    <p class="footer-project__subtitle pr-md-0 pb-2 pr-md-0">Смотреть документы</p>
                     <p class="footer-project__subtitle">Запросить договор</p>
 
                 </li>
-                <li
-                        class="footer-project__item nav-item col-xl-2 col-lg-3 col-md-6 mr-lg-3 pr-md-0 offset-md-1 offset-lg-0 col-12">
+                <li class="footer-project__item nav-item col-xl-2 col-lg-3 col-md-6 mr-lg-3 pr-md-0 offset-md-1 offset-lg-0 col-12 pb-5 pb-lg-0">
                     <h4 class="footer-project__subtitle pb-4">Контакты</h4>
                     <address class="footer-project__contacts footer-project__address"><span
-                                class="footer-project__name text-white">Адрес:</span> Екатеринбург, ул. 8 Марта, 269</address>
+                                class="footer-project__name text-white">Адрес:</span> Екатеринбург, ул. 8 Марта, 269
+                    </address>
                     <div class="footer-project__contacts footer-project__phone pb-2"><span
                                 class="footer-project__name">Телефон:</span>
                         <a class="text-white" href="tel:+74951234567">+7 (495)
@@ -243,23 +244,27 @@ AppAsset::register($this);
 
 
                 </li>
-                <li class="footer-project__item nav-item col-lg-1 col-md-5 col-12 pl-4">
+                <li class="footer-project__item nav-item col-lg-1 col-md-5 col-12  pl-lg-0pl-lg-4">
                     <h4 class="footer-project__subtitle m-xl-0 pb-3">Мы в соцсетях</h4>
                     <div class="social-block pl-3">
                         <div class="row">
                             <div class="social-block__icon mb-2 mr-2">
-                                <img class="social-block__img social-block-inst mx-auto mt-1" src="images/social_icons/inst.svg"
+                                <img class="social-block__img social-block-inst mx-auto mt-1"
+                                     src="images/social_icons/inst.svg"
                                      alt="inst">
                             </div>
                             <div class="social-block__icon mb-2">
-                                <img class="social-block__img social-block-twit mx-auto mt-2" src="images/social_icons/twit.svg"
+                                <img class="social-block__img social-block-twit mx-auto mt-2"
+                                     src="images/social_icons/twit.svg"
                                      alt="twit">
                             </div>
                             <div class="social-block__icon mr-2">
-                                <img class="social-block__img social-block-fb mx-auto mt-2" src="images/social_icons/fb.svg" alt="fb">
+                                <img class="social-block__img social-block-fb mx-auto mt-2"
+                                     src="images/social_icons/fb.svg" alt="fb">
                             </div>
                             <div class="social-block__icon">
-                                <img class="social-block__img social-block-vk mx-auto mt-1" src="images/social_icons/vk.svg" alt="vk">
+                                <img class="social-block__img social-block-vk mx-auto mt-1"
+                                     src="images/social_icons/vk.svg" alt="vk">
                             </div>
 
                         </div>
@@ -270,7 +275,6 @@ AppAsset::register($this);
     </footer>
 
 </div>
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
