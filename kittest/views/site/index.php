@@ -9,9 +9,8 @@ $this->registerMetaTag([
 
 ?>
 <main class="orders col-12 col-xl-10 col-md-9 px-0 pl-md-0 pr-md-3">
-    <div
-            class="order-summary d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pl-2 bg-white pt-3 pb-2 mb-3">
-        <h1 class="order-summary__title pl-2">Сводка по заказам</h1>
+    <div class="order-summary d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pl-2 bg-white pt-3 pb-2 mb-3">
+        <h1 class="order-summary__title mx-lg-0 mx-auto pb-3 pl-lg-2">Сводка по заказам</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-md-2">
                 <p class="order-summary__option align-self-center pr-md-1">Период:</p>
@@ -28,14 +27,11 @@ $this->registerMetaTag([
                     </div>
                 </div>
 
-
-
-                <p class="order-summary__option align-self-center pr-md-5">Свой период:</p>
+                <p class="order-summary__option align-self-center pr-md-5 pr-lg-2">Свой период:</p>
                 <img class="order-summary__interval d-inline bg-light" width="36" height="36"
                      src="images/calendar_icon.svg" alt="Отследить заказ">
 
                 <div>
-
                 </div>
             </div>
         </div>
